@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color:black;
+display:flex;
+flex-direction:column;
+align-content: center;
+align-items:center;
+position:relative;}
+
+h1{
+	color:darkgoldenrod;
+	border-bottom:solid 2px white;
+}
+span{color:red}
+
+fieldset{color:goldenrod;
+	border-radius:2%;}
+/*background-color:rgba(265, 265, 265, .7);}*/
+
+form{padding-bottom:2%;}
+
+#submit{
+	margin-left:40%;
+	margin-right:auto;
+	margin-top:5%
+}
