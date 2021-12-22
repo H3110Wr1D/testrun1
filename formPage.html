@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>brform</title>
+<link href="scripts/style1.css" rel="stylesheet" type="text/css">
+</head>
+<!--Maybe make a switch case in a javascripit file that determines what questions appear by triggering css animation with an event listener; ie fade in, to determine relevant questions as teh user completes the survey -->
+<body>
+	<header>
+		<h1>Welcome to the B&amp;R<br>
+		 Uniform Client Intake Portal</h1>
+	</header>
+	<main>
+		<fieldset>
+			<form method="post" action="mailto:brandonxboxer@gmail.com?subject=Incoming Order" enctype="text/plain">
+				<label for="firstname">First Name:</label><br>
+				<input type="text" placeholder="John" name="firstname" id="firstname"><br><br>
+				<label for="lastname">Last Name:</label><br>
+				<input type="text" placeholder="Smith" name="lastname" id="lastname"><br><br>
+				<label for="companyname">Company Name:</label><br>
+				<input type="text" name="companyname" id="companyname"><br><br>
+				<label for="address">Address:</label><br>
+				<input type="text" placeholder="162 wharf avenue" name="address" id="compaddress"><br><br>
+				<label for="companyType">business/event type</label><br>
+				<input type="text" id="compType" placeholder="IE Landscaping, Bed &amp; breakfast, Charity Event" size="50"><br><br>
+				<label for="email">E-mail Address:</label><br>
+				<input type="email" placeholder="abc123@gmail.com" name="email" id="email"><br><br>
+				<label for="phone">Phone Number</label><br>
+				<input type="tel" id="phoneNumber" name="phone" 
+					   pattern="[0-9]{3}-[0-90]{3}-[0-9]{4}" ><br><br>
+				<label for="shipping">How will this order be received?</label><br>
+				<input type="radio" name="shipping" id="deliveryMethod1">
+				<label for="pickup">Pickup</label>
+				<input type="radio" name="shipping" id="deliveryMethod2">
+				<label for="delivery">Delivery</label><br><br>
+				<label for="pickupdate">Pickup Date:</label>
+				<!--maybe improve this with some JS to make it automatically two weeks from when the form is submitted-->
+				<input type="date" name="pickupdate" id="pickupdate"><br><br>
+				<label for="typeofwork">Are you interested in embroidery, screen printing or both?</label><br>
+				<input type="radio" value="screenPrinting" name="typeofwork" id="screenprinting">
+				<label for="screenPrinting">Screen Printing</label>
+				<input type="radio" value="embroidery" name="typeofwork" id="embroidery">
+				<label for="embroidery">Embroidery</label>
+				<input type="radio" value="both" name="typeofwork" id="both">
+				<label for="both">Both</label><br><br>
+				<label for="quantity">Order Quantity:<span>ALL SCREEN PRINTING ORDERS REQUIRE A<br>
+				 MINIMUM ORDER OF 12 GARMENTS, ALL EMBROIDERY<br>
+				 ORDERS HAVE A MINIMUM OF 6</span></label><br>
+				<input type="number" id="quantity" name="quantity"><br><br>
+				<label for="variety">What kind of garment(s) would you like?</label><br>
+							<input type="checkbox" name="variety" id="tShirts">
+							<label for="tShirts">T-shirts</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="checkbox" name="variety" id="longT">
+							<label for="longT">Long Sleeve T's</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="checkbox" name="variety" id="hoodies">
+							<label for="hoodies">Hoodies</label><br>
+							<input type="checkbox" name="variety" id="zipHoodies">
+							<label for="zipHoodies">Zipper Hoodies</label>
+							<input type="checkbox" name="variety" id="crewNeck">
+							<label for="crewNeck">Crew Neck Sweatshirts</label>
+							<input type="checkbox" name="variety" id="polo">
+							<label for="polo">Polo Shirts</label><br>
+							<input type="checkbox" name="variety" id="other">
+							<label for="other">other</label><br><br>
+				<label for="printZone">Where on the item would you like printed?<br>
+					<i>(IE:left sleeve, left crest, back, full chest)</i></label><br>
+				<input type="text" size="50" id="printzone" name="printzone"><br><br>
+				<label for="colors">What color(s) are you interested in?</label><br>
+				<input type="text" name="colors" id="colorScheme"><br><br>
+				<label for="artworkInput">Do you already have artwork? submit it here:</label><br>
+				<input type="file" name="artworkInput" id="artwork"
+					   accept="image/jpeg, image/png"><br><br>
+				<label for="finalThoughts">Any special requests/comments/concerns?</label><br>
+				<textarea name="finalThoughts" id="finalThoughts" placeholder="custom color/packaging requirements/etc" rows="4" cols="50"></textarea><br><br>
+				<input type="submit" action="submit" value="submit" id="submit">
+			</form>
+		</fieldset>
+	</main>
+</body>
+</html>
